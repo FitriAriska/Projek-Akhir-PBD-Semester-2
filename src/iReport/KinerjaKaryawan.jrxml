@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="null" language="groovy" pageWidth="842" pageHeight="595" orientation="Landscape" columnWidth="802" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="655bff87-c566-421c-b1bd-cfa868d49bf8">
+	<property name="ireport.zoom" value="1.0"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="0"/>
+	<queryString>
+		<![CDATA[SELECT * FROM `datakaryawan` WHERE ID]]>
+	</queryString>
+	<field name="ID" class="java.lang.Integer">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="Nama" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="Alamat" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="Jabatan" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="Pekerjaan" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="Tanggal" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="106" splitType="Stretch">
+			<staticText>
+				<reportElement uuid="ee83f5aa-aef5-4264-ae9e-5b2352263737" x="294" y="0" width="251" height="49"/>
+				<textElement>
+					<font size="34" isBold="true"/>
+				</textElement>
+				<text><![CDATA[GAZZAZ MART]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="056be5cf-6975-4f2a-96ca-c385cc8705ef" x="188" y="49" width="457" height="26"/>
+				<textElement>
+					<font size="16" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Jl. Raya Ambunten Tengan, Kec. Ambunten, Kab. Sumenep]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="9665fa0a-9d27-45a1-bbdb-e64dc6bb971a" x="325" y="75" width="126" height="20"/>
+				<textElement>
+					<font size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Telp. 081999567330]]></text>
+			</staticText>
+			<image>
+				<reportElement uuid="99b0a545-1058-4cc8-9c8c-0ba5ae1171d4" x="56" y="0" width="217" height="106"/>
+				<imageExpression><![CDATA["E:\\G.jpg"]]></imageExpression>
+			</image>
+		</band>
+	</title>
+	<pageHeader>
+		<band height="35" splitType="Stretch">
+			<staticText>
+				<reportElement uuid="5c0b64da-4b72-4a17-87aa-9247cac4d1a4" x="273" y="0" width="243" height="35"/>
+				<textElement>
+					<font size="20" isBold="false"/>
+				</textElement>
+				<text><![CDATA[Laporan Kinerja Karyawan]]></text>
+			</staticText>
+		</band>
+	</pageHeader>
+	<columnHeader>
+		<band height="341" splitType="Stretch">
+			<staticText>
+				<reportElement uuid="79f0e1a1-98a7-47cf-bb40-1742a36c4b85" x="0" y="61" width="56" height="20"/>
+				<textElement/>
+				<text><![CDATA[ID]]></text>
+			</staticText>
+			<textField>
+				<reportElement uuid="eb88fdfb-610b-45a0-9a3d-dab9b7f73593" x="0" y="120" width="56" height="20"/>
+				<textElement/>
+				<textFieldExpression><![CDATA[$F{ID}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="ac05eaf8-70a5-475f-8706-bb8ebe5aecde" x="88" y="120" width="100" height="20"/>
+				<textElement/>
+				<textFieldExpression><![CDATA[$F{Nama}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement uuid="79f0e1a1-98a7-47cf-bb40-1742a36c4b85" x="88" y="61" width="100" height="20"/>
+				<textElement/>
+				<text><![CDATA[Nama ]]></text>
+			</staticText>
+			<textField>
+				<reportElement uuid="5acab046-6425-4464-b30f-d6b51582565c" x="244" y="120" width="100" height="20"/>
+				<textElement/>
+				<textFieldExpression><![CDATA[$F{Alamat}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="e5017cbf-fcca-4bec-aaed-0e59afb0b842" x="403" y="120" width="100" height="20"/>
+				<textElement/>
+				<textFieldExpression><![CDATA[$F{Jabatan}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="479f0a7d-ac5e-4580-a4db-3f9ee3389211" x="545" y="120" width="100" height="20"/>
+				<textElement/>
+				<textFieldExpression><![CDATA[$F{Pekerjaan}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement uuid="12cdcdbe-effc-4c8e-8bed-5fd471c75785" x="702" y="61" width="100" height="20"/>
+				<textElement/>
+				<text><![CDATA[Tanggal]]></text>
+			</staticText>
+			<textField>
+				<reportElement uuid="12dabeba-8f79-4b25-8262-a556694ca302" x="702" y="120" width="100" height="20"/>
+				<textElement/>
+				<textFieldExpression><![CDATA[$F{Tanggal}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement uuid="12cdcdbe-effc-4c8e-8bed-5fd471c75785" x="244" y="61" width="100" height="20"/>
+				<textElement/>
+				<text><![CDATA[Alamat]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="12cdcdbe-effc-4c8e-8bed-5fd471c75785" x="403" y="61" width="100" height="20"/>
+				<textElement/>
+				<text><![CDATA[Jabatan]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="12cdcdbe-effc-4c8e-8bed-5fd471c75785" x="545" y="61" width="100" height="20"/>
+				<textElement/>
+				<text><![CDATA[Pekerjaan]]></text>
+			</staticText>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="3" splitType="Stretch"/>
+	</detail>
+	<columnFooter>
+		<band splitType="Stretch"/>
+	</columnFooter>
+	<pageFooter>
+		<band splitType="Stretch"/>
+	</pageFooter>
+	<summary>
+		<band splitType="Stretch"/>
+	</summary>
+</jasperReport>
